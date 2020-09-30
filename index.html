@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonid Jakimovski</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="main-section">
+        <div class="left-menu">
+            <div class="left-menu-items">
+                <div id="home-btn" class="single-item"><img src="icons V1/user.svg" alt=""></div>
+                <div id="contact-btn" class="single-item"><img src="icons V1/phone.svg" alt=""></div>
+                <div id="content-btn" class="single-item"><img src="icons V1/edit.svg" alt=""></div>
+            </div> <!-- left menu items-->
+        </div> <!-- left menu -->
+
+        <div class="main-image"><img src="images/profile.png"></div> <!-- main image -->
+
+        <div class="info">
+            <div id="basic-info" class="info-wrapper">
+                <div class="title">about me</div> <!-- title -->
+
+                <div class="about-info">
+                    <div class="info-item">22 years<span class="slash">/</span></div>
+                    <div class="info-item">Skopje<span class="slash">/</span></div>
+                    <div class="info-item">freelance / full-time</div>
+                </div> <!-- about info -->
+
+                <div class="more-info">Hi, my name is Leonid Jakimovski, full-stack web developer, from Skopje, Macedonia, with more than a year of experience building full-stack web applications.</div> <!-- more info -->
+
+                <div class="smaller-title">my services</div> <!-- smaller title -->
+
+                <div class="services-wrapper">
+                    <div class="single-service">
+                        <div class="service-icon"><img src="icons v1/monitor.png"></div>
+
+                        <div class="service-title">development</div>
+
+                        <div class="service-desc">Building a custom solution based on your technical specification.</div>
+                    </div> <!-- single service -->
+
+                    <div class="single-service">
+                        <div class="service-icon"><img src="icons v1/database.png"></div>
+
+                        <div class="service-title">database</div>
+
+                        <div class="service-desc">Designing and building custom databases.</div>
+                    </div> <!-- single service -->
+                </div> <!-- services wrapper -->
+            </div> <!-- info wrapper -->
+            
+
+            <div id="contact-wrapper" class="contact-wrapper">
+                <div class="title">contact me</div> <!-- title -->
+                <div class="contact-item">
+                    <div class="contact-icon"><img src="icons V1/pin.svg"></div>
+                    <div class="contact-info">test</div>
+                </div>
+            </div> <!-- contact wrapper -->
+        </div> <!-- info -->
+    </div> <!-- main section -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            console.log('leo')
+
+            $('#contact-btn').click(function(event){
+                // $('#basic-info').fadeOut();
+                $('#basic-info').css({ 'display':'none' });
+                $('#contact-wrapper').css({ 'display':'block' });
+                // setTimeout(function() { 
+                //     $('#contact-wrapper').fadeIn('slow');
+                // }, 3000);
+            })
+        })
+    </script>
+</body>
+</html>

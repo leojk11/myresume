@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #1f1e1e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #333333;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+body {
+    background: black;
+}
+
+.main-section {
+    width: 70%;
+    position: absolute;
+    top: 180px;
+    left: 320px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+.left-menu {
+    background: #1f1e1e;
+    width: 80px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 150px;
+}
+.left-menu-items {
+    width: 100%;
+}
+.single-item {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.single-item img {
+    width: 30px;
+    filter: invert(100%);
+}
+
+.main-image {
+    width: 500px;
+    height: 670px; 
+    overflow: hidden;
+    margin-top: -34px;
+}
+.main-image img {
+    width: 1000px;
+    margin-left: -450px;
+    /* margin-top: -200px; */
+    object-fit: cover;
+    /* margin-bottom: -500px; */
+}
+
+.info {
+    color: white;
+    background: #1f1e1e;
+    height: 600px;
+    width: 700px;
+    overflow-y: scroll;
+    padding: 30px;
+    
+}
+.info .title {
+    font-size: 4.2rem;
+    font-weight: bold;
+}
+.info .about-info {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.slash {
+    margin-left: 20px;
+}
+
+.info .more-info {
+    margin-top: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 70px;
+}
+
+.info .smaller-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.services-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.single-service {
+    width: 200px;
+}
+.service-title {
+    font-size: 1.5rem;
+}
+.service-icon {
+    width: 50px;
+    height: 60px;
+}
+.service-icon img {
+    width: 100%;
+    filter: invert(100%);
+}
+
+
+.service-desc {
+    /* font-size: 10px; */
+    color: whitesmoke;
+    margin-top: 5px;
+}
+
+#contact-wrapper {
+    display: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+.contact-icon {
+    width: 50px;
+}
+.contact-icon img {
+    width: 100%;
+}
