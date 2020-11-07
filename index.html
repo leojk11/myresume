@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonid Jakimovski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -12,15 +14,52 @@
     <div class="main-section">
         <div class="left-menu">
             <div class="left-menu-items">
-                <div id="home-btn" class="single-item"><img src="icons V1/user.svg" alt=""></div>
-                <div id="contact-btn" class="single-item"><img src="icons V1/phone.svg" alt=""></div>
-                <div id="content-btn" class="single-item"><img src="icons V1/edit.svg" alt=""></div>
+                <div id="home-btn" class="single-item active">
+                    <svg class="menu-item-img" viewBox="0 0 576 512">
+                        <!-- <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" stroke="#10c398" stroke-width="20"></path> -->
+                        <path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"></path>
+                    </svg>
+                </div>
+                <div id="contact-btn" class="single-item">
+                    <svg class="menu-item-img flipped" viewBox="0 0 576 512">
+                        <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                    </svg>
+                </div>
+                <div id="works-btn" class="single-item">
+                    <svg class="menu-item-img" viewBox="0 0 576 512">
+                        <path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z" ></path>
+                    </svg>
+                </div>
+                <div id="skills-btn" class="single-item">
+                    <svg class="menu-item-img" viewBox="0 0 576 512">
+                        <path d="M574.1 280.37L528.75 98.66c-5.91-23.7-21.59-44.05-43-55.81-21.44-11.73-46.97-14.11-70.19-6.33l-15.25 5.08c-8.39 2.79-12.92 11.86-10.12 20.24l5.06 15.18c2.79 8.38 11.85 12.91 20.23 10.12l13.18-4.39c10.87-3.62 23-3.57 33.16 1.73 10.29 5.37 17.57 14.56 20.37 25.82l38.46 153.82c-22.19-6.81-49.79-12.46-81.2-12.46-34.77 0-73.98 7.02-114.85 26.74h-73.18c-40.87-19.74-80.08-26.75-114.86-26.75-31.42 0-59.02 5.65-81.21 12.46l38.46-153.83c2.79-11.25 10.09-20.45 20.38-25.81 10.16-5.3 22.28-5.35 33.15-1.73l13.17 4.39c8.38 2.79 17.44-1.74 20.23-10.12l5.06-15.18c2.8-8.38-1.73-17.45-10.12-20.24l-15.25-5.08c-23.22-7.78-48.75-5.41-70.19 6.33-21.41 11.77-37.09 32.11-43 55.8L1.9 280.37A64.218 64.218 0 0 0 0 295.86v70.25C0 429.01 51.58 480 115.2 480h37.12c60.28 0 110.37-45.94 114.88-105.37l2.93-38.63h35.75l2.93 38.63C313.31 434.06 363.4 480 423.68 480h37.12c63.62 0 115.2-50.99 115.2-113.88v-70.25c0-5.23-.64-10.43-1.9-15.5zm-370.72 89.42c-1.97 25.91-24.4 46.21-51.06 46.21H115.2C86.97 416 64 393.62 64 366.11v-37.54c18.12-6.49 43.42-12.92 72.58-12.92 23.86 0 47.26 4.33 69.93 12.92l-3.13 41.22zM512 366.12c0 27.51-22.97 49.88-51.2 49.88h-37.12c-26.67 0-49.1-20.3-51.06-46.21l-3.13-41.22c22.67-8.59 46.08-12.92 69.95-12.92 29.12 0 54.43 6.44 72.55 12.93v37.54z"></path>
+                    </svg>
+                </div>
             </div> <!-- left menu items-->
         </div> <!-- left menu -->
 
-        <div class="main-image"><img src="images/profile.png"></div> <!-- main image -->
+        <div class="main-image">
+            <img src="images/profile.png">
 
-        <div class="info">
+            <div class="person-info">
+                <div class="name">Leonid Jakimovski</div>
+
+                <div class="position">full-stack web developer</div>
+
+                <div class="profiles">
+                    <a class="profiles-item"><svg id="github-btn" class="profile-btns" viewBox="0 0 576 512">
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                    </svg></a>
+                    <a class="profiles-item"><svg id="linked-btn" class="profile-btns" viewBox="0 0 576 512">
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                    </svg></a>
+                </div>
+
+            </div> <!-- person info -->
+            
+        </div> <!-- main image -->
+
+        <div id="info" class="info show">
             <div id="basic-info" class="info-wrapper">
                 <div class="title">about me</div> <!-- title -->
 
@@ -30,17 +69,25 @@
                     <div class="info-item">freelance / full-time</div>
                 </div> <!-- about info -->
 
-                <div class="more-info">Hi, my name is Leonid Jakimovski, full-stack web developer, from Skopje, Macedonia, with more than a year of experience building full-stack web applications.</div> <!-- more info -->
+                <div class="more-info">Hi, my name is Leonid Jakimovski, full-stack web developer, from Skopje, Macedonia, with about a year of experience building full-stack web applications.</div> <!-- more info -->
 
                 <div class="smaller-title">my services</div> <!-- smaller title -->
 
                 <div class="services-wrapper">
                     <div class="single-service">
+                        <div class="service-icon"><img src="icons V1/monitor.png"></div>
+
+                        <div class="service-title">front-end development</div>
+
+                        <div class="service-desc">Building a custom front-end solution based on your technical specification (not desinging).</div>
+                    </div> <!-- single service -->
+
+                    <div class="single-service">
                         <div class="service-icon"><img src="icons v1/monitor.png"></div>
 
-                        <div class="service-title">development</div>
+                        <div class="service-title">back-end development</div>
 
-                        <div class="service-desc">Building a custom solution based on your technical specification.</div>
+                        <div class="service-desc">Building a custom back-end solution based on your technical specification.</div>
                     </div> <!-- single service -->
 
                     <div class="single-service">
@@ -55,26 +102,417 @@
             
 
             <div id="contact-wrapper" class="contact-wrapper">
-                <div class="title">contact me</div> <!-- title -->
-                <div class="contact-item">
-                    <div class="contact-icon"><img src="icons V1/pin.svg"></div>
-                    <div class="contact-info">test</div>
-                </div>
+                <div class="title contact-title">contact me</div> <!-- title -->
+                <div class="contact-items-wrapper">
+                    <div class="row">
+                        <div class="contact-item">
+                            <div class="contact-icon"><img src="icons V1/pin.svg"></div>
+                            <div class="contact-info">Skopje, Macedonia</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><img src="icons V1/phone.svg" style="filter: invert(100%)"></div>
+                            <div class="contact-info">+398 71-296-519</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="contact-item">
+                            <div class="contact-icon"><img src="icons V1/mail-bulk.svg" style="filter: invert(100%)"></div>
+                            <div class="contact-info">jakimovskil211@gmail.com</div>
+                        </div>
+                        <!-- <div class="contact-item">
+                            <div class="contact-icon"><img src="icons V1/pin.svg"></div>
+                            <div class="contact-info">Skopje, Macedonia</div>
+                        </div> -->
+                    </div>
+
+                </div> <!-- contact items wrapper -->
+
+                <div class="send-message">
+                    <div class="title">send a message</div> <!-- title -->
+                        coming soon....
+                </div> <!-- send message -->
             </div> <!-- contact wrapper -->
+
+            <div id="works-wrapper" class="works">
+                <div class="title">projects</div>
+                <div class="works-wrapper">
+                    <div class="left">
+                        <div class="single-work">
+                            <a href="https://foodguru.mk/" target="_blank" class="work-title">FoodGuruMK</a>
+                            <br>
+                            <div class="work-desc">Food delivery web-page.</div>
+                            <div class="work-date">15.05.2020</div>
+                            <br>
+                            <div class="work-image"><img src="images/fgmk.PNG"></div>
+                        </div>
+                    </div> <!-- left -->
+
+                    <div class="right">
+                        <div class="single-work">
+                            <div class="work-image"><img src="images/newsmk.PNG"></div>
+                            <div class="work-title">newsMK</div>
+                            <div class="work-desc">coming soon...</div>
+                            <div class="work-date">10.09.2020</div>
+                        </div>
+                    </div> <!-- right -->
+                </div> <!-- works wrapper -->
+            </div> <!-- works -->
+
+            <div id="skills-wrapper" class="skills">
+                <div class="skills-title">skills</div>
+                <div class="skills-wrapper">
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">front-end development</div>
+                            <div class="skill-sec-label">80%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 80%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">back-end development</div>
+                            <div class="skill-sec-label">95%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 95%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">data bases</div>
+                            <div class="skill-sec-label">85%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 85%;"></div></div>
+                    </div> <!-- single skill -->
+
+                </div> <!-- skills wrapper -->
+                <br>
+                <div class="skills-title">knowledge</div>
+                <div class="skills-wrapper">
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">HTML / HTML5</div>
+                            <div class="skill-sec-label">100%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 100%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">CSS / CSS3</div>
+                            <div class="skill-sec-label">99%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 99%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">javascript / jQuery / DOM manipulations</div>
+                            <div class="skill-sec-label">85%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 85%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">react (studies in progress)</div>
+                            <div class="skill-sec-label">50%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 50%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">nodeJS (backend)</div>
+                            <div class="skill-sec-label">90%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 90%;"></div></div>
+                    </div> <!-- single skill -->
+
+                    <div class="single-skill">
+                        <div class="skill-label">
+                            <div class="skill-main-label">github</div>
+                            <div class="skill-sec-label">90%</div>
+                        </div>
+                        <div class="skill-proc"><div class="skill-procc" style="width: 90%;"></div></div>
+                    </div> <!-- single skill -->
+
+                </div> <!-- skills wrapper -->
+
+                <div class="skills-other-wrapper">
+                    <div class="skills-half">
+                        <div class="skills-half-title">
+                            <div class="skills-title-icon">
+                                <svg class="skill-icons" viewBox="0 0 576 512">
+                                    <path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path>
+                                </svg>
+                            </div>
+                            <div class="skills-title-label">education</div>
+                        </div> <!-- skills half title -->
+
+                        <div class="half-wrapper">
+                            <div class="half-item">
+                                <div class="half-item-date">2019 - 2020</div>
+
+                                <div class="half-item-title">code academy</div>
+
+                                <div class="half-item-location">Skopje</div>
+
+                                <div class="half-item-desc">Full-stack web developer, 6 mounths academy with two real time projects.</div>
+                            </div> <!-- half item -->
+
+                            <div class="half-item">
+                                <div class="half-item-date">2019 - ongoing</div>
+
+                                <div class="half-item-title">faculty of computer science and egineering</div>
+
+                                <div class="half-item-location">Skopje</div>
+
+                                <div class="half-item-desc">4 years of studies on computer engineering.</div>
+                            </div> <!-- half item -->
+                        </div> <!-- half wrapper -->
+                    </div> <!-- half -->
+
+                    <div class="skills-half">
+                        <div class="skills-half-title">
+                            <div class="skills-title-icon">
+                                <svg class="skill-icons" viewBox="0 0 576 512">
+                                    <path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path>
+                                </svg>
+                            </div>
+                            <div class="skills-title-label">experience</div>
+                        </div> <!-- skills half title -->
+
+                        <div class="half-wrapper">
+                            <div class="half-item">
+                                <div class="half-item-date">2020</div>
+
+                                <div class="half-item-title">foodGuruMK</div>
+
+                                <div class="half-item-location">Skopje</div>
+
+                                <div class="half-item-desc">3 months of experience building food delivery application which can be accessed on <a href="https://www.foodguru.mk" target="_blank" class="ex-examp">fooduguru.mk</a></div>
+                            </div> <!-- half item -->
+
+                            <div class="half-item">
+                                <div class="half-item-date">2020</div>
+
+                                <div class="half-item-title">freelance</div>
+
+                                <div class="half-item-location">Skopje</div>
+
+                                <div class="half-item-desc">Half a year of building different full-stack applications.</div>
+                            </div> <!-- half item -->
+                        </div> <!-- half wrapper -->
+
+                    </div> <!-- half -->
+                </div> <!-- other wrapper -->
+            </div> <!-- skills -->
         </div> <!-- info -->
     </div> <!-- main section -->
 
+    <div class="mobile-wrapper">
+        <div class="mobile-nav">
+            <div id="nav-about" class="nav-item">
+                <svg id="about-icon" class="nav-item-img nav-item-active" viewBox="0 0 576 512">
+                    <path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"></path>
+                </svg>
+            </div>
+            
+            <div id="nav-contact" class="nav-item">
+                <svg id="contact-icon" class="nav-item-img" viewBox="0 0 576 512">
+                    <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                </svg>
+            </div>
+            <div id="nav-projects" class="nav-item">
+                <svg id="projects-icon" class="nav-item-img" viewBox="0 0 576 512">
+                    <path d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z"></path>
+                </svg>
+            </div>
+            <div id="nav-skills" class="nav-item">
+                <svg id="skills-icon" class="nav-item-img" viewBox="0 0 576 512">
+                    <path d="M574.1 280.37L528.75 98.66c-5.91-23.7-21.59-44.05-43-55.81-21.44-11.73-46.97-14.11-70.19-6.33l-15.25 5.08c-8.39 2.79-12.92 11.86-10.12 20.24l5.06 15.18c2.79 8.38 11.85 12.91 20.23 10.12l13.18-4.39c10.87-3.62 23-3.57 33.16 1.73 10.29 5.37 17.57 14.56 20.37 25.82l38.46 153.82c-22.19-6.81-49.79-12.46-81.2-12.46-34.77 0-73.98 7.02-114.85 26.74h-73.18c-40.87-19.74-80.08-26.75-114.86-26.75-31.42 0-59.02 5.65-81.21 12.46l38.46-153.83c2.79-11.25 10.09-20.45 20.38-25.81 10.16-5.3 22.28-5.35 33.15-1.73l13.17 4.39c8.38 2.79 17.44-1.74 20.23-10.12l5.06-15.18c2.8-8.38-1.73-17.45-10.12-20.24l-15.25-5.08c-23.22-7.78-48.75-5.41-70.19 6.33-21.41 11.77-37.09 32.11-43 55.8L1.9 280.37A64.218 64.218 0 0 0 0 295.86v70.25C0 429.01 51.58 480 115.2 480h37.12c60.28 0 110.37-45.94 114.88-105.37l2.93-38.63h35.75l2.93 38.63C313.31 434.06 363.4 480 423.68 480h37.12c63.62 0 115.2-50.99 115.2-113.88v-70.25c0-5.23-.64-10.43-1.9-15.5zm-370.72 89.42c-1.97 25.91-24.4 46.21-51.06 46.21H115.2C86.97 416 64 393.62 64 366.11v-37.54c18.12-6.49 43.42-12.92 72.58-12.92 23.86 0 47.26 4.33 69.93 12.92l-3.13 41.22zM512 366.12c0 27.51-22.97 49.88-51.2 49.88h-37.12c-26.67 0-49.1-20.3-51.06-46.21l-3.13-41.22c22.67-8.59 46.08-12.92 69.95-12.92 29.12 0 54.43 6.44 72.55 12.93v37.54z"></path>
+                </svg>
+            </div>
+        </div> <!-- mobile nav -->
+
+        <div class="mobile-content-wrapper">
+            
+        </div> <!-- mobile content wrapper -->
+
+        
+    </div> <!-- mobile wrapper -->
+
     <script type="text/javascript">
         $(document).ready(function(){
-            console.log('leo')
+            $("#home-btn").click(function () {
+                $('#home-btn').toggleClass('active');
+                $('#home-btn-img').css({ 'filter':'none' });
 
-            $('#contact-btn').click(function(event){
-                // $('#basic-info').fadeOut();
+                if($('#contact-btn').hasClass('active')){
+                    $('#contact-btn').toggleClass('active');
+                    $('#contact-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#works-btn').hasClass('active')){
+                    $('#works-btn').toggleClass('active');
+                    $('#works-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#skills-btn').hasClass('active')){
+                    $('#skills-btn').toggleClass('active');
+                    $('#skills-btn-img').css({ 'filter':'invert(100%)' });
+                }
+
+                $('.info').toggleClass('show');
+                setTimeout(function(){ 
+                    $('.info').toggleClass('show');
+                    $('#basic-info').fadeIn('slow');
+                }, 750)
+                $('#contact-wrapper').fadeOut('slow');
+                $('#works-wrapper').fadeOut('slow');
+                $('#skills-wrapper').fadeOut('slow');
+            });
+
+            $("#contact-btn").click(function () {
+                $('#contact-btn').toggleClass('active');
+                $('#contact-btn-img').css({ 'filter':'none' });
+
+                if($('#home-btn').hasClass('active')){
+                    $('#home-btn').toggleClass('active');
+                    $('#home-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#works-btn').hasClass('active')){
+                    $('#works-btn').toggleClass('active');
+                    $('#works-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#skills-btn').hasClass('active')){
+                    $('#skills-btn').toggleClass('active');
+                    $('#skills-btn-img').css({ 'filter':'invert(100%)' });
+                }
+
+                $('.info').toggleClass('show');
+                setTimeout(function(){ 
+                    $('.info').toggleClass('show');
+                    $('#contact-wrapper').fadeIn('slow');
+                }, 750)
+                $('#basic-info').fadeOut('slow');
+                $('#works-wrapper').fadeOut('slow');
+                $('#skills-wrapper').fadeOut('slow');
+            });
+
+            $("#works-btn").click(function () {
+                $('#works-btn').toggleClass('active');
+                $('#works-btn-img').css({ 'filter':'none' });
+                
+                if($('#home-btn').hasClass('active')){
+                    $('#home-btn').toggleClass('active');
+                    $('#home-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#contact-btn').hasClass('active')){
+                    $('#contact-btn').toggleClass('active');
+                    $('#contact-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#skills-btn').hasClass('active')){
+                    $('#skills-btn').toggleClass('active');
+                    $('#skills-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                
+                $('.info').toggleClass('show');
+                setTimeout(function(){ 
+                    $('.info').toggleClass('show');
+                    $('#works-wrapper').fadeIn('slow');
+                }, 750)
+                $('#basic-info').fadeOut('slow');
+                $('#contact-wrapper').fadeOut('slow');
+                $('#skills-wrapper').fadeOut('slow');
+            });
+
+            $("#skills-btn").click(function () {
+                $('#skills-btn').toggleClass('active');
+                $('#skills-btn-img').css({ 'filter':'none' });
+                
+                if($('#home-btn').hasClass('active')){
+                    $('#home-btn').toggleClass('active');
+                    $('#home-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#contact-btn').hasClass('active')){
+                    $('#contact-btn').toggleClass('active');
+                    $('#contact-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                if($('#works-btn').hasClass('active')){
+                    $('#works-btn').toggleClass('active');
+                    $('#works-btn-img').css({ 'filter':'invert(100%)' });
+                }
+                
+                $('.info').toggleClass('show');
+                setTimeout(function(){ 
+                    $('.info').toggleClass('show');
+                    $('#skills-wrapper').fadeIn('slow');
+                }, 750)
+                $('#basic-info').fadeOut('slow');
+                $('#contact-wrapper').fadeOut('slow');
+                $('#works-wrapper').fadeOut('slow');
+            });
+
+            $('#github-btn').click(function(event){
+                window.open('https://github.com/leojk11', '_blank')
+            })
+            $('#linked-btn').click(function(event){
+                window.open('https://www.linkedin.com/in/leonid-jakimovski-78a83719a/', '_blank')
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#about-icon').css({ 'fill':'#10c398' });
+
+            $('#nav-about').click(function(event){
+                $('#about-icon').css({ 'fill':'#10c398' });
+
+                $('#contact-icon').css({ 'fill':'white' });
+                $('#projects-icon').css({ 'fill':'white' });
+                $('#skills-icon').css({ 'fill':'white' });
+
+                $('#contact-wrapper').css({ 'display':'none' });
+                $('#works-wrapper').css({ 'display':'none' });
+                $('#skills-wrapper').css({ 'display':'none' });
+
+                $('#basic-info').fadeIn('slow');
+            })
+            $('#nav-contact').click(function(event){
+                $('#contact-icon').css({ 'fill':'#10c398' });
+
+                $('#about-icon').css({ 'fill':'white' });
+                $('#projects-icon').css({ 'fill':'white' });
+                $('#skills-icon').css({ 'fill':'white' });
+
                 $('#basic-info').css({ 'display':'none' });
-                $('#contact-wrapper').css({ 'display':'block' });
-                // setTimeout(function() { 
-                //     $('#contact-wrapper').fadeIn('slow');
-                // }, 3000);
+                $('#works-wrapper').css({ 'display':'none' });
+                $('#skills-wrapper').css({ 'display':'none' });
+
+                $('#contact-wrapper').fadeIn('slow');
+            })
+            $('#nav-projects').click(function(event){
+                $('#projects-icon').css({ 'fill':'#10c398' });
+
+                $('#about-icon').css({ 'fill':'white' });
+                $('#contact-icon').css({ 'fill':'white' });
+                $('#skills-icon').css({ 'fill':'white' });
+
+                $('#basic-info').css({ 'display':'none' });
+                $('#contact-wrapper').css({ 'display':'none' });
+                $('#skills-wrapper').css({ 'display':'none' });
+
+                $('#works-wrapper').fadeIn('slow');
+            })
+            $('#nav-skills').click(function(event){
+                $('#skills-icon').css({ 'fill':'#10c398' });
+
+                $('#about-icon').css({ 'fill':'white' });
+                $('#contact-icon').css({ 'fill':'white' });
+                $('#projects-icon').css({ 'fill':'white' });
             })
         })
     </script>
