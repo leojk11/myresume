@@ -419,6 +419,10 @@ body {
     cursor: pointer;
 }
 
+.mobile-contacts {
+    display: none;
+}
+
 @media only screen and (max-width: 992px) {
     html, body {
         max-width: 100%;
@@ -540,5 +544,31 @@ body {
     .services-wrapper {
         padding-bottom: 100px;
     }
-    
+
+    .mobile-contacts {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .mobile-contact-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .mobile-contact-icon-wr {
+        width: 50px;
+    }
+    .mobile-contact-icon {
+        width: 100%;
+        filter: invert(100%);
+    }
+    .mobile-contact-cont {
+        font-size: 1.5rem;
+        margin-left: 15px;
+        border-bottom: 1px solid #8f9491;
+    }
+    .mobile-contact-cont a {
+        color: #8f9491;
+        text-decoration: none;
+    }
 }
